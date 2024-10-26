@@ -3,15 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\s0494305\\Documents\\GitHub\\Cat_Savior\\Cat_Savior\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0F96E8EF-E7D7-C127-BD28-41E1D16FFA14}|Assembly-CSharp.csproj|c:\\users\\s0494305\\documents\\github\\cat_savior\\cat_savior\\assets\\audio\\playbackmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F96E8EF-E7D7-C127-BD28-41E1D16FFA14}|Assembly-CSharp.csproj|solutionrelative:assets\\audio\\playbackmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5DE1B7FA-A3DD-6014-E47C-4DF693EB9935}|SteamAudioUnity.csproj|c:\\users\\s0494305\\documents\\github\\cat_savior\\cat_savior\\assets\\plugins\\steamaudio\\scripts\\runtime\\steamaudiomaterials\\steamaudiogeometryconcrete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5DE1B7FA-A3DD-6014-E47C-4DF693EB9935}|SteamAudioUnity.csproj|solutionrelative:assets\\plugins\\steamaudio\\scripts\\runtime\\steamaudiomaterials\\steamaudiogeometryconcrete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DE1B7FA-A3DD-6014-E47C-4DF693EB9935}|SteamAudioUnity.csproj|c:\\users\\s0494305\\documents\\github\\cat_savior\\cat_savior\\assets\\plugins\\steamaudio\\scripts\\runtime\\steamaudiomaterials\\steamaudiogeometrygravel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5DE1B7FA-A3DD-6014-E47C-4DF693EB9935}|SteamAudioUnity.csproj|C:\\Users\\s0494305\\Documents\\GitHub\\Cat_Savior\\Cat_Savior\\assets\\plugins\\steamaudio\\scripts\\runtime\\steamaudiomaterials\\steamaudiogeometrygravel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5DE1B7FA-A3DD-6014-E47C-4DF693EB9935}|SteamAudioUnity.csproj|solutionrelative:assets\\plugins\\steamaudio\\scripts\\runtime\\steamaudiomaterials\\steamaudiogeometrygravel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DE1B7FA-A3DD-6014-E47C-4DF693EB9935}|SteamAudioUnity.csproj|c:\\users\\s0494305\\documents\\github\\cat_savior\\cat_savior\\assets\\plugins\\steamaudio\\scripts\\runtime\\steamaudiomaterials\\steamaudiogeometry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5DE1B7FA-A3DD-6014-E47C-4DF693EB9935}|SteamAudioUnity.csproj|C:\\Users\\s0494305\\Documents\\GitHub\\Cat_Savior\\Cat_Savior\\assets\\plugins\\steamaudio\\scripts\\runtime\\steamaudiomaterials\\steamaudiogeometry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5DE1B7FA-A3DD-6014-E47C-4DF693EB9935}|SteamAudioUnity.csproj|solutionrelative:assets\\plugins\\steamaudio\\scripts\\runtime\\steamaudiomaterials\\steamaudiogeometry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -22,11 +26,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "PlaybackManager.cs",
+              "DocumentMoniker": "C:\\Users\\s0494305\\Documents\\GitHub\\Cat_Savior\\Cat_Savior\\Assets\\Audio\\PlaybackManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Audio\\PlaybackManager.cs",
+              "ToolTip": "C:\\Users\\s0494305\\Documents\\GitHub\\Cat_Savior\\Cat_Savior\\Assets\\Audio\\PlaybackManager.cs",
+              "RelativeToolTip": "Assets\\Audio\\PlaybackManager.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAkwBkAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T22:52:56.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "SteamAudioGeometry.cs",
               "DocumentMoniker": "C:\\Users\\s0494305\\Documents\\GitHub\\Cat_Savior\\Cat_Savior\\Assets\\Plugins\\SteamAudio\\Scripts\\Runtime\\SteamAudioMaterials\\SteamAudioGeometry.cs",
               "RelativeDocumentMoniker": "Assets\\Plugins\\SteamAudio\\Scripts\\Runtime\\SteamAudioMaterials\\SteamAudioGeometry.cs",
@@ -34,12 +51,11 @@
               "RelativeToolTip": "Assets\\Plugins\\SteamAudio\\Scripts\\Runtime\\SteamAudioMaterials\\SteamAudioGeometry.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T16:55:11.503Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T16:55:11.503Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "SteamAudioGeometryGravel.cs",
               "DocumentMoniker": "C:\\Users\\s0494305\\Documents\\GitHub\\Cat_Savior\\Cat_Savior\\Assets\\Plugins\\SteamAudio\\Scripts\\Runtime\\SteamAudioMaterials\\SteamAudioGeometryGravel.cs",
               "RelativeDocumentMoniker": "Assets\\Plugins\\SteamAudio\\Scripts\\Runtime\\SteamAudioMaterials\\SteamAudioGeometryGravel.cs",
@@ -47,12 +63,11 @@
               "RelativeToolTip": "Assets\\Plugins\\SteamAudio\\Scripts\\Runtime\\SteamAudioMaterials\\SteamAudioGeometryGravel.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAB8AAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T16:54:33.732Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T16:54:33.732Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "SteamAudioGeometryConcrete.cs",
               "DocumentMoniker": "C:\\Users\\s0494305\\Documents\\GitHub\\Cat_Savior\\Cat_Savior\\Assets\\Plugins\\SteamAudio\\Scripts\\Runtime\\SteamAudioMaterials\\SteamAudioGeometryConcrete.cs",
               "RelativeDocumentMoniker": "Assets\\Plugins\\SteamAudio\\Scripts\\Runtime\\SteamAudioMaterials\\SteamAudioGeometryConcrete.cs",
