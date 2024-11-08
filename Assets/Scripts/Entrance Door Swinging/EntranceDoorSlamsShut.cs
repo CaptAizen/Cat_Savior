@@ -7,8 +7,10 @@ public class StopOscillatingDoor : MonoBehaviour
     public float[] shutAngles; // Array of angles at which each door is considered shut
     public float closingSpeed = 2f; // Speed at which the doors close
     public AudioSource[] shutSoundSources; // Array of AudioSource components for the shut sound
+    public bool DoorsClosed = false;
 
     private int currentSoundIndex = 0; // Index to track the current AudioSource
+    private int doorsClosedCount = 0; // Track the number of closed doors
 
     private void OnTriggerEnter(Collider other)
     {
@@ -53,13 +55,21 @@ public class StopOscillatingDoor : MonoBehaviour
         }
 
         door.transform.rotation = Quaternion.Euler(0, shutAngle, 0); // Ensure it ends exactly at the shut angle
+        doorsClosedCount++;
 
-        // Play the shut sound using the next available AudioSource
-        if (shutSoundSources.Length > 0)
+        // Check if all doors are closed
+        if (doorsClosedCount == doors.Length)
         {
-            shutSoundSources[currentSoundIndex].Play();
-            currentSoundIndex = (currentSoundIndex + 1) % shutSoundSources.Length;
-            Destroy(this);
+            DoorsClosed = true;
+            Debug.Log("All doors are closed. DoorsClosed set to true.");
+            // Play the shut sound using the next available AudioSource
+            if (shutSoundSources.Length > 0)
+            {
+                shutSoundSources[currentSoundIndex].Play();
+                currentSoundIndex = (currentSoundIndex + 1) % shutSoundSources.Length;
+            }
+            // Deactivate this script's GameObject
+            gameObject.SetActive(true);
         }
     }
 }
