@@ -1,10 +1,12 @@
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class ThunderSound : MonoBehaviour
 {
     public AudioClip[] thunderClips; // Array of thunder sound clips
     private ParticleSystem particleSystem;
     private int previousParticleCount;
+    public AudioMixerGroup outdoorAudioGroup; // Reference to the Outdoor audio group
 
     // Range for random volume and pitch
     public float minVolume = 0.8f;
@@ -37,6 +39,7 @@ public class ThunderSound : MonoBehaviour
 
             // Create a temporary AudioSource to play the sound
             AudioSource tempAudioSource = gameObject.AddComponent<AudioSource>();
+            tempAudioSource.outputAudioMixerGroup = outdoorAudioGroup; // Assign to Outdoor audio group
             tempAudioSource.volume = Random.Range(minVolume, maxVolume);
             tempAudioSource.pitch = Random.Range(minPitch, maxPitch);
             tempAudioSource.PlayOneShot(thunderClip);
