@@ -19,12 +19,15 @@ public class LightFlickerer : MonoBehaviour
     [Range(0f, 30f)]
     public float SixthDelay;
     bool IsBuzzing = false;
+    bool IsOn = false;
+    AudioSource LightbulbBuzz;
    
     // Start is called before the first frame update
     void Start()
     {
         myLight = GetComponent<Light>();
         counter = GameObject.FindObjectOfType<CatSavedCounter>();
+        LightbulbBuzz = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -35,6 +38,14 @@ public class LightFlickerer : MonoBehaviour
             IsBuzzing = true;
             StartCoroutine(Buzz());
         }
+        if (IsOn)
+        {
+            LightbulbBuzz.Play();
+        }
+        else
+        {
+            LightbulbBuzz.Stop();
+        }
     }
 
     IEnumerator Buzz()
@@ -43,25 +54,32 @@ public class LightFlickerer : MonoBehaviour
         {
             // Dark for 3 seconds
             myLight.intensity = 0;
+            IsOn = false;
             yield return new WaitForSeconds(FirstDelay);
 
             // On for 1 second
-            myLight.intensity = 5;
+            myLight.intensity = 10;
+            IsOn = true;
             yield return new WaitForSeconds(SecondDelay);
 
             // Off for 1 second
             myLight.intensity = 0;
+            IsOn = false;
             yield return new WaitForSeconds(ThirdDelay);
 
             // On for 3 seconds
-            myLight.intensity = 5;
+            myLight.intensity = 10;
+            IsOn= true;
             yield return new WaitForSeconds(FourthDelay);
+
             // Off for 1 second
             myLight.intensity = 0;
+            IsOn = false;
             yield return new WaitForSeconds(FifthDelay);
 
             // On for 3 seconds
-            myLight.intensity = 5;
+            myLight.intensity = 10;
+            IsOn = true;
             yield return new WaitForSeconds(SixthDelay);
         }
     }
