@@ -33,7 +33,7 @@ public class LightFlickerer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (counter.Cats == 1 && !IsBuzzing)
+        if (!IsBuzzing)
         {
             IsBuzzing = true;
             StartCoroutine(Buzz());

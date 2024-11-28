@@ -5,6 +5,7 @@ using UnityEngine;
 public class HeartBeat : MonoBehaviour
 {
     AudioSource HeartBeatSound;
+    bool SoundPlayed = false;
 
     // Start is called before the first frame update
     void Start()
@@ -12,10 +13,17 @@ public class HeartBeat : MonoBehaviour
         HeartBeatSound = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
-    void OnTriggerEnter()
+    // OnTriggerEnter is called when the Collider other enters the trigger
+    void OnTriggerEnter(Collider other)
     {
-        HeartBeatSound.Play();
-        HeartBeatSound.loop = true;
+        if (other.CompareTag("Player"))
+        {
+            if (!HeartBeatSound.isPlaying && SoundPlayed == false)
+            {
+                HeartBeatSound.Play();
+                HeartBeatSound.loop = true;
+                SoundPlayed = true;
+            }
+        }
     }
 }

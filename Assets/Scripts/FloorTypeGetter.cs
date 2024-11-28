@@ -14,7 +14,7 @@ public class FootstepManager : MonoBehaviour
     private Dictionary<string, int> layerPriority = new Dictionary<string, int>()
     {
         { "Concrete", 4 },
-        { "Wood", 3 },
+        { "Water", 3 },
         { "Gravel", 2 },
         { "Carpet", 1 },
         { "Default", 0 } // Default (Grass) has the lowest priority
@@ -68,7 +68,7 @@ public class FootstepManager : MonoBehaviour
             case "Concrete":
                 selectedClips = concreteFootsteps;
                 break;
-            case "Wood":
+            case "Water":
                 selectedClips = woodFootsteps;
                 break;
             case "Carpet":

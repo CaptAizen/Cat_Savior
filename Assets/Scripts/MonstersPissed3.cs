@@ -10,6 +10,7 @@ public class MonstersPissed3 : MonoBehaviour
     CatSavedCounter counter;
     AudioSource Monster;
     public GameObject Monsters;
+    public AudioSource Heartbeat;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,10 +23,11 @@ public class MonstersPissed3 : MonoBehaviour
     {
         if (counter.Cats == 3 && SoundPLayed == false)
         {
-            SoundPLayed = true;
+            Heartbeat.pitch = 1.5f;
             Monster.Play();
             Destroy(this, Monster.clip.length);
             Monsters.SetActive(true);
+            SoundPLayed = true;
         }
     }
 }
